@@ -1,14 +1,14 @@
 def perform_operation(num1, num2, operation):
-    match operation:
-        case "":
+   
+        if operation == "":
             print("Please select an operation")
-        case "add":
+        elif operation == "add":
            return result = num1 + num2
-        case "subtract":
+        elif operation == "subtract":
             return result = num1 - num2
-        case "multiply":
+        elif operation == "multiply":
             return result = num1 * num2
-        case "divide":
+        elif operation == "divide":
             if num2 != 0:
                 return result = num1/num2
             else:
