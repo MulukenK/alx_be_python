@@ -1,5 +1,7 @@
 def perform_operation(num1, num2, operation):
     match operation:
+        case "":
+            print("Please select an operation")
         case "add":
            return result = num1 + num2
         case "subtract":
