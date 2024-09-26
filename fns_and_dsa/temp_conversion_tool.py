@@ -19,17 +19,17 @@ if conversion == "f":
     if 32 <= temperature <= 212:
         print(f"{temperature}°F is {convert_to_celsius(temperature)}°C")
     else:
-        print("Please enter a temperature between 32 and 212°F.")
+        print("Invalid temperature. Please enter a numeric value.")
         
 elif conversion == "c":
     if 0 <= temperature <= 100:
         print(f"{temperature}°C is {convert_to_fahrenheit(temperature)}°F")
     
     else:
-        print("Please enter a temperature between 0 and 100°C.")
+        print("Invalid temperature. Please enter a numeric value.")
 
 else:
-    print("Please enter a correct measurement (Fahrenheit or Celsius).")
+    print("Please enter a correct scale (Fahrenheit or Celsius).")
 
 
 
