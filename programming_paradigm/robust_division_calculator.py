@@ -3,9 +3,10 @@ def safe_divide(numerator, denominator):
     try:
         float(numerator)
         float(denominator)
-        
+
         denominator != 0
-        numerator or denominator == type(float)
+        type(numerator) == type(float)
+        type(denominator) == type(float)
 
     
     except ZeroDivisionError:
