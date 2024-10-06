@@ -1,7 +1,9 @@
 def safe_divide(numerator, denominator):
-    float(numerator)
-    float(denominator)
+    
     try:
+        float(numerator)
+        float(denominator)
+        
         denominator != 0
         numerator or denominator == type(float)
 
