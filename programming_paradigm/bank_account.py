@@ -3,7 +3,7 @@
 
 class BankAccount:
     def __init__(self, account_balance):
-        self.account_balance = account_balance
+        self.account_balance = float(account_balance)
         self.initial_balance = 0
 
        
@@ -20,7 +20,7 @@ class BankAccount:
             return False
     
     def display_balance(self):
-       return print(f"Current Balance: ${float(self.account_balance)}")
+       return print(f"Current Balance: ${self.account_balance}")
 
 
 
