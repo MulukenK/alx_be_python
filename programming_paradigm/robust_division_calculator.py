@@ -2,8 +2,8 @@ def safe_divide(numerator, denominator):
     float(numerator)
     float(denominator)
     try:
-        denominator == 0
-        numerator or denominator != type(float)
+        denominator != 0
+        numerator or denominator == type(float)
 
     
     except ZeroDivisionError:
