@@ -20,7 +20,8 @@ class BankAccount:
             return False
     
     def display_balance(self):
-       return print(f"Current Balance: ${self.account_balance}")
+       formatted = "{:.2f}".format(self.account_balance) 
+       return print(f"Current Balance: ${formatted}")
 
 
 
