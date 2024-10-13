@@ -23,5 +23,5 @@ class Circle(Shape):
         self.radius = radius
     
     def area(self):
-        return f"The area of the Circle is: {self.radius**2 * math.pi}"
+        return f"The area of the Circle is: {self.radius ** 2 * math.pi}"
         
