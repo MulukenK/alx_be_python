@@ -5,7 +5,7 @@ class Shape:
         pass
 
     def area(self):
-        raise Exception(NotImplementedError)
+        raise NotImplementedError("Error")
 
 
 class Rectangle(Shape):
@@ -15,7 +15,7 @@ class Rectangle(Shape):
         self.width = width
     
     def area(self):
-        return print(f"The area of the Rectangle is: {self.length * self.width}")
+        return self.length * self.width
 
 class Circle(Shape):
     def __init__(self, radius):
@@ -23,5 +23,5 @@ class Circle(Shape):
         self.radius = radius
     
     def area(self):
-        return print(f"The area of the Circle is: {self.radius ** 2 * math.pi}")
+        return math.pi * (self.radius ** 2)
         
