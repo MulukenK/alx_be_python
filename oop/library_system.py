@@ -32,4 +32,4 @@ class Library():
     
     def list_books(self):
         for items in self.books:
-            print(items)
+            print(f"{items}")
